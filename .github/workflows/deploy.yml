@@ -14,38 +14,51 @@ jobs:
       - name: Get my code
         uses: actions/checkout@v4
 
-      # Étape 2 : Préparer les clés SSH
-      - name: Setup SSH keys
+      # Étape 2 : Configuration SSH complète
+      - name: Setup SSH
         run: |
           mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          
+          # Créer les clés
           echo "${{ secrets.BASTION_SSH_KEY }}" > ~/.ssh/bastion_key
           echo "${{ secrets.TARGET_SSH_KEY }}" > ~/.ssh/target_key
           chmod 600 ~/.ssh/bastion_key
           chmod 600 ~/.ssh/target_key
+          
+          # Configuration SSH
+          cat > ~/.ssh/config << 'EOF'
+          Host bastion
+            HostName portier.polytech-lille.fr
+            User rlavogie
+            Port 2222
+            IdentityFile ~/.ssh/bastion_key
+            StrictHostKeyChecking no
+            UserKnownHostsFile /dev/null
+          
+          Host target
+            HostName jardin.plil.info
+            User root
+            IdentityFile ~/.ssh/target_key
+            ProxyJump bastion
+            StrictHostKeyChecking no
+            UserKnownHostsFile /dev/null
+          EOF
 
-      # Étape 3 : Copier les fichiers vers le bastion
-      - name: Copy files to bastion
+      # Étape 3 : Test de connexion
+      - name: Test connections
         run: |
-          # Copier vers un dossier temporaire sur le bastion
-          scp -i ~/.ssh/bastion_key \
-              -P 2222 \
-              -o StrictHostKeyChecking=no \
-              -r ./* rlavogie@portier.polytech-lille.fr:/tmp/deploy_files/
+          echo "Testing bastion..."
+          ssh bastion "echo 'Bastion OK'"
+          
+          echo "Testing target via bastion..."
+          ssh target "echo 'Target OK'"
 
-      # Étape 4 : Copier du bastion vers le serveur final
-      - name: Copy from bastion to final server
+      # Étape 4 : Déploiement direct
+      - name: Deploy files
         run: |
-          ssh -i ~/.ssh/bastion_key \
-              -p 2222 \
-              -o StrictHostKeyChecking=no \
-              rlavogie@portier.polytech-lille.fr \
-              "scp -i /path/to/your/target/key -r /tmp/deploy_files/* root@jardin.plil.info:/var/www/html/ && rm -rf /tmp/deploy_files"
-
-      # Étape 5 : Corriger les permissions
-      - name: Fix permissions
-        run: |
-          ssh -i ~/.ssh/bastion_key \
-              -p 2222 \
-              -o StrictHostKeyChecking=no \
-              rlavogie@portier.polytech-lille.fr \
-              "ssh root@jardin.plil.info 'chown -R www-data:www-data /var/www/html'"
+          # Déployer directement avec ProxyJump
+          scp -r ./* target:/var/www/html/
+          
+          # Corriger les permissions
+          ssh target "chown -R www-data:www-data /var/www/html && echo 'Deployment complete!'"
