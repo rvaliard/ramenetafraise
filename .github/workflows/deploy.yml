@@ -1,0 +1,51 @@
+name: Deploy Website
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # Étape 1 : Récupérer votre code
+      - name: Get my code
+        uses: actions/checkout@v4
+
+      # Étape 2 : Préparer les clés SSH
+      - name: Setup SSH keys
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.BASTION_SSH_KEY }}" > ~/.ssh/bastion_key
+          echo "${{ secrets.TARGET_SSH_KEY }}" > ~/.ssh/target_key
+          chmod 600 ~/.ssh/bastion_key
+          chmod 600 ~/.ssh/target_key
+
+      # Étape 3 : Copier les fichiers vers le bastion
+      - name: Copy files to bastion
+        run: |
+          # Copier vers un dossier temporaire sur le bastion
+          scp -i ~/.ssh/bastion_key \
+              -P 2222 \
+              -o StrictHostKeyChecking=no \
+              -r ./* rlavogie@portier.polytech-lille.fr:/tmp/deploy_files/
+
+      # Étape 4 : Copier du bastion vers le serveur final
+      - name: Copy from bastion to final server
+        run: |
+          ssh -i ~/.ssh/bastion_key \
+              -p 2222 \
+              -o StrictHostKeyChecking=no \
+              rlavogie@portier.polytech-lille.fr \
+              "scp -i /path/to/your/target/key -r /tmp/deploy_files/* root@jardin.plil.info:/var/www/html/ && rm -rf /tmp/deploy_files"
+
+      # Étape 5 : Corriger les permissions
+      - name: Fix permissions
+        run: |
+          ssh -i ~/.ssh/bastion_key \
+              -p 2222 \
+              -o StrictHostKeyChecking=no \
+              rlavogie@portier.polytech-lille.fr \
+              "ssh root@jardin.plil.info 'chown -R www-data:www-data /var/www/html'"
