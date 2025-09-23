@@ -1,40 +1,96 @@
-/* Custom styles for VergerPartage */
+/* RameneTaFraise - Custom styles following Share Fruits graphic charter */
 
 :root {
-    --primary-green: #198754;
-    --light-green: #d1e7dd;
-    --warm-orange: #fd7e14;
-    --soft-gray: #f8f9fa;
+    /* Colors from graphic charter */
+    --primary-green: #84D777;     /* Light green from palette */
+    --secondary-orange: #DC7914;  /* Orange from palette */
+    --accent-green: #069321;      /* Dark green from palette */
+    --cream-background: #F1E9E2;  /* Cream from palette */
+    --dark-text: #343232;         /* Dark gray from palette */
+    
+    /* Additional colors for UI */
+    --strawberry-red: #dc2626;    /* For strawberry theme accents */
+    --light-strawberry: #fecaca;  /* Light pink for backgrounds */
+    --text-muted: #6b7280;        /* Muted text */
+    --white: #ffffff;
+    --light-gray: #f8f9fa;
 }
 
+/* Typography following graphic charter */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Glacial Indifference', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
+    color: var(--dark-text);
+    background-color: var(--white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Catchy Mager', 'Segoe UI', Arial, sans-serif;
+    font-weight: 700;
+    color: var(--dark-text);
 }
 
 /* Navigation */
 .navbar-brand {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-family: 'Catchy Mager', 'Segoe UI', Arial, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--secondary-orange) !important;
+}
+
+.navbar-brand i {
+    color: var(--strawberry-red) !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-weight: 500;
+    color: var(--dark-text);
+    transition: color 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--secondary-orange);
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--secondary-orange) !important;
 }
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    background: linear-gradient(135deg, var(--cream-background) 0%, var(--white) 50%, var(--light-strawberry) 100%);
     min-height: 80vh;
     position: relative;
 }
 
 .hero-image img {
     border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    box-shadow: 0 20px 40px rgba(132, 215, 119, 0.2);
+    border: 3px solid var(--primary-green);
 }
 
 .min-vh-75 {
     min-height: 75vh;
 }
 
-/* Step Icons */
+/* Color theme updates */
+.text-success {
+    color: var(--primary-green) !important;
+}
+
+.text-warning {
+    color: var(--secondary-orange) !important;
+}
+
+.text-info {
+    color: var(--accent-green) !important;
+}
+
+.bg-success {
+    background-color: var(--primary-green) !important;
+}
+
+/* Step Icons with new color theme */
 .step-icon {
     width: 80px;
     height: 80px;
@@ -45,32 +101,51 @@ body {
     font-size: 1.5rem;
 }
 
+.step-icon.bg-success {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--accent-green) 100%);
+}
+
+.step-icon.bg-warning {
+    background: linear-gradient(135deg, var(--secondary-orange) 0%, #f97316 100%);
+}
+
+.step-icon.bg-info {
+    background: linear-gradient(135deg, var(--accent-green) 0%, var(--primary-green) 100%);
+}
+
+.step-icon.bg-danger {
+    background: linear-gradient(135deg, var(--strawberry-red) 0%, var(--secondary-orange) 100%);
+}
+
 .step-number {
     position: absolute;
     top: -8px;
     right: -8px;
     background: white;
-    color: #333;
+    color: var(--secondary-orange);
+    border: 2px solid var(--primary-green);
     border-radius: 50%;
-    width: 24px;
-    height: 24px;
+    width: 26px;
+    height: 26px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 0.8rem;
     font-weight: bold;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 8px rgba(132, 215, 119, 0.3);
 }
 
 /* Cards */
 .card {
     transition: all 0.3s ease;
     border-radius: 15px;
+    border: 1px solid rgba(132, 215, 119, 0.2);
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.1) !important;
+    box-shadow: 0 15px 35px rgba(132, 215, 119, 0.2) !important;
+    border-color: var(--primary-green);
 }
 
 /* Badges */
@@ -81,37 +156,116 @@ body {
 }
 
 .bg-light.text-dark {
-    background-color: #f1f3f4 !important;
-    border: 1px solid #e0e0e0;
+    background-color: var(--cream-background) !important;
+    border: 1px solid var(--primary-green);
+    color: var(--dark-text) !important;
+}
+
+.badge.bg-danger {
+    background-color: var(--strawberry-red) !important;
+}
+
+.badge.bg-secondary {
+    background-color: var(--accent-green) !important;
 }
 
 /* Buttons */
 .btn {
-    border-radius: 10px;
+    border-radius: 12px;
     font-weight: 500;
     padding: 12px 24px;
     border: none;
     transition: all 0.3s ease;
+    font-family: 'Glacial Indifference', sans-serif;
 }
 
 .btn-success {
-    background: linear-gradient(135deg, var(--primary-green) 0%, #20c997 100%);
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--accent-green) 100%);
+    color: white;
 }
 
 .btn-success:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(25, 135, 84, 0.3);
+    box-shadow: 0 8px 25px rgba(132, 215, 119, 0.4);
+    background: linear-gradient(135deg, var(--accent-green) 0%, var(--primary-green) 100%);
 }
 
 .btn-outline-success {
     border: 2px solid var(--primary-green);
     color: var(--primary-green);
+    background: transparent;
 }
 
 .btn-outline-success:hover {
     background: var(--primary-green);
+    color: white;
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(25, 135, 84, 0.3);
+    box-shadow: 0 8px 25px rgba(132, 215, 119, 0.4);
+}
+
+.btn-warning {
+    background: linear-gradient(135deg, var(--secondary-orange) 0%, #f97316 100%);
+    color: white;
+}
+
+.btn-outline-secondary {
+    border: 2px solid var(--dark-text);
+    color: var(--dark-text);
+}
+
+.btn-outline-secondary:hover {
+    background: var(--dark-text);
+    color: white;
+}
+
+/* Alert styles */
+.alert-success {
+    background-color: rgba(132, 215, 119, 0.1);
+    border-color: var(--primary-green);
+    color: var(--accent-green);
+}
+
+.alert-danger {
+    background-color: rgba(220, 38, 38, 0.1);
+    border-color: var(--strawberry-red);
+    color: var(--strawberry-red);
+}
+
+/* Form elements */
+.form-control {
+    border-radius: 10px;
+    border: 2px solid rgba(132, 215, 119, 0.3);
+    padding: 12px 16px;
+    transition: all 0.3s ease;
+    font-family: 'Glacial Indifference', sans-serif;
+}
+
+.form-control:focus {
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 0.2rem rgba(132, 215, 119, 0.25);
+}
+
+.form-select {
+    border-radius: 10px;
+    border: 2px solid rgba(132, 215, 119, 0.3);
+    padding: 12px 16px;
+}
+
+.form-select:focus {
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 0.2rem rgba(132, 215, 119, 0.25);
+}
+
+.form-label {
+    font-weight: 600;
+    color: var(--dark-text);
+    margin-bottom: 8px;
+    font-family: 'Catchy Mager', sans-serif;
+}
+
+.form-check-input:checked {
+    background-color: var(--primary-green);
+    border-color: var(--primary-green);
 }
 
 /* Chat Button */
@@ -126,6 +280,31 @@ body {
     width: 60px;
     height: 60px;
     font-size: 1.2rem;
+    background: linear-gradient(135deg, var(--secondary-orange) 0%, var(--strawberry-red) 100%);
+    border: none;
+}
+
+/* Backgrounds */
+.bg-light {
+    background-color: var(--cream-background) !important;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, var(--dark-text) 0%, #2c3e50 100%) !important;
+}
+
+footer a:hover {
+    color: var(--secondary-orange) !important;
+    transition: color 0.3s ease;
+}
+
+footer .h5 {
+    color: var(--primary-green) !important;
+}
+
+footer .text-warning {
+    color: var(--secondary-orange) !important;
 }
 
 /* Responsive adjustments */
@@ -161,6 +340,10 @@ body {
         height: 50px;
         font-size: 1rem;
     }
+    
+    .navbar-brand {
+        font-size: 1.4rem;
+    }
 }
 
 /* Loading animation for buttons */
@@ -189,46 +372,9 @@ body {
     100% { transform: rotate(360deg); }
 }
 
-/* Utility classes */
-.text-success {
-    color: var(--primary-green) !important;
-}
-
-.bg-success {
-    background-color: var(--primary-green) !important;
-}
-
+/* Shadow utilities */
 .shadow-lg {
-    box-shadow: 0 15px 35px rgba(0,0,0,0.1) !important;
-}
-
-/* Footer */
-footer {
-    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%) !important;
-}
-
-footer a:hover {
-    color: var(--warm-orange) !important;
-    transition: color 0.3s ease;
-}
-
-/* Form styles for future pages */
-.form-control {
-    border-radius: 10px;
-    border: 2px solid #e9ecef;
-    padding: 12px 16px;
-    transition: all 0.3s ease;
-}
-
-.form-control:focus {
-    border-color: var(--primary-green);
-    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.1);
-}
-
-.form-label {
-    font-weight: 600;
-    color: #495057;
-    margin-bottom: 8px;
+    box-shadow: 0 15px 35px rgba(132, 215, 119, 0.2) !important;
 }
 
 /* Custom scrollbar */
@@ -237,7 +383,7 @@ footer a:hover {
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: var(--cream-background);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -246,5 +392,64 @@ footer a:hover {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #157347;
+    background: var(--accent-green);
+}
+
+/* Breadcrumb styling */
+.breadcrumb-item a {
+    color: var(--secondary-orange);
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+    color: var(--accent-green);
+}
+
+/* Special strawberry accent for RameneTaFraise branding */
+.strawberry-accent {
+    color: var(--strawberry-red) !important;
+}
+
+.strawberry-bg {
+    background-color: var(--strawberry-red) !important;
+}
+
+/* Typography scale adjustments */
+.display-4, .display-5 {
+    font-family: 'Catchy Mager', sans-serif;
+    font-weight: 800;
+}
+
+.lead {
+    font-family: 'Glacial Indifference', sans-serif;
+    font-weight: 400;
+}
+
+/* Enhanced hover effects */
+.card-body:hover .card-title {
+    color: var(--secondary-orange);
+    transition: color 0.3s ease;
+}
+
+/* Focus states */
+.btn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(132, 215, 119, 0.5);
+}
+
+.form-control:focus,
+.form-select:focus {
+    outline: none;
+}
+
+/* Stats section styling */
+.h3.fw-bold.text-success {
+    color: var(--primary-green) !important;
+}
+
+.h3.fw-bold.text-warning {
+    color: var(--secondary-orange) !important;
+}
+
+.h3.fw-bold.text-info {
+    color: var(--accent-green) !important;
 }
