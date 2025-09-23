@@ -114,7 +114,7 @@ if ($search || $location_filter || $urgent_only) {
         <div class="container">
             <a class="navbar-brand" href="index.php">
                 <i class="fas fa-leaf text-success me-2"></i>
-                <strong>VergerPartage</strong>
+                <strong>RameneTaFraise</strong>
             </a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
