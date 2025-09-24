@@ -57,7 +57,7 @@ session_start();
                 <div class="col-lg-8 mx-auto text-center">
                     <h1 class="display-5 fw-bold mb-3">Abonnements disponibles</h1>
                     <p class="lead text-muted">
-                        Souscrivez à un abonnement afin de bénéficier de visites illimitées au jardin, ainsi que de vidéos de formations au jardinage.
+                        Souscrivez à un abonnement afin de bénéficier de visites illimitées aux jardins, ainsi que de vidéos de formations au jardinage.
                     </p>
                 </div>
             </div>
