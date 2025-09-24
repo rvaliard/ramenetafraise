@@ -66,10 +66,6 @@ if ($_POST && $annonce) {
     }
 }
 
-if (!$annonce) {
-    header('Location: annonces.php');
-    exit;
-}
 ?>
 <!DOCTYPE html>
 <html lang="fr">
