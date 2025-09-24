@@ -114,13 +114,90 @@ if ($_POST && $annonce) {
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.php" class="text-decoration-none">Accueil</a></li>
-                    <li class="breadcrumb-item"><a href="annonces.php" class="text-decoration-none">Annonces</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                    <li class="breadcrumb-item"><a href="mentionslegales.php" class="text-decoration-none">Mentions légales</a></li>
                 </ol>
             </nav>
         </div>
     </section>
 
+
+    <!-- Text Section -->
+    <<div class="text-center mb-5">
+        <h1 class="display-5 fw-bold">Mentions légales</h2>
+            <p class="lead text-muted">
+                Bienvenue sur la première version (v1) de RamèneTaFraise.com !
+                RamèneTaFraise est une entreprièse fondée le 23 septembre 2025.
+                Toutes les règles d’utilisation du site sont écrasées par le présent document.
+            </p>
+        <h2 class="display-5 fw-bold">1. Éditeur du site</h2>
+            <p class="lead text-muted">
+                Entreprise RamèneTaFraise
+                N° SIRET :
+                Adresse du siège social : Av. Paul Langevin, 59655 Villeneuve-d'Ascq
+                Email : RamèneTaFraise@gmail.com
+                Responsable de projet : Alexis
+                Directeurs de la publication : Robin
+            </p>
+        <h2 class="display-5 fw-bold">2. Hébergeur</h2>
+            <p class="lead text-muted">
+                Le site est hébergé par :
+                Adresse :
+                Téléphone : 
+                Site :
+            </p>
+        <h2 class="display-5 fw-bold">3. Propriété intellectuelle</h2>
+            <h3 class="display-5 fw-bold">1- Photos/Vidéo/illustrations/logo :</h2>
+                <p class="lead text-muted">
+                    Les médias utilisés par notre site sont le plus souvent protégés. Leur usage nous est autorisée exclusivement, par une autorisation écrite de leur propriétaire.
+                    Certains médias utilisés sont également sous licence creative commons.
+                    Nous vous rappelons que vous disposez d’un droit d’accès, de modification, de rectification et de suppression des données qui vous concernent (art. 34 de la loi « Informatique et Libertés » du 6 janvier 1978). Il est possible à tout moment de ne plus céder ses droits à l’image, sur simple demande écrite. » 
+                    Les images présentent dans les annonces sont soumises à la responsabilité morale et civile de leur auteur.
+                    La sélection, l’agencement et la présentation des contenus visuels présents sur ce site constituent une œuvre originale protégée par le droit d’auteur. Toute reproduction intégrale ou partielle de cette composition, sans autorisation préalable, est interdite.
+                </p>
+
+            <h3 class="display-5 fw-bold">2- Contenus textuels :</h2>
+                <p class="lead text-muted">
+                    Tout contenu textuel écrit sur RamèneTaFraise est propriété de RamèneTaFraise sauf indication contraire.
+                    Les annonces des membres ne répondent pas à cette règle et sont donc sous la responsabilité de leur(s) rédacteur(s).
+                </p> 
+        <h2 class="display-5 fw-bold">4. Responsabilités civiles</h2>
+            <p class="lead text-muted">
+                RamèneTaFraise est un site français hébergé dans l’Union Européenne, conformément à la majorité numérique française, toute personne âgée de moins de 15 ans sera sous la responsabilité de ses parents ou tuteurs légaux.
+                Les annonces seront postées en suivant ces règles de publication :
+
+                RamèneTaFraise est la propriété d’une équipe d’origine, de sexe, d’ethnie, d’âge, d’orientation sexuelle, de lieu de résidence, de croyance et d’orientation socio-politique différente. Nous ne tolérerons aucune atteinte à la liberté et aux droits humains fondamentaux sur le site ainsi que sur les groupes affiliés
+                Le présent site est soumis au droit français et, le cas échéant, aux règlements de l’Union européenne applicables en France. Tout litige relatif à l’utilisation du site est soumis à la compétence exclusive des juridictions françaises.
+            </p>
+        <h2 class="display-5 fw-bold">5. Données personnelles</h2>
+            <p class="lead text-muted">
+                Toutes les données personnelles recueillies sur le site sont traitées avec la plus stricte confidentialité. 
+                Elles sont susceptibles d'être revendues à des tiers selon ces conditions :
+                Conformément à la loi n° 78-17 du 6 janvier 1978 et au RGPD, l’utilisateur peut à tout moment accéder aux informations personnelles le concernant détenues par RamèneTaFraise, demander leur modification ou leur suppression. 
+                Vous disposez donc d’un droit d’accès, de modification et de suppression de vos données. Ainsi, selon les articles 36, 39 et 40 de la loi Informatique et Libertés, l’utilisateur peut demander que soient rectifiées, complétées, clarifiées, mises à jour ou effacées les informations le concernant qui sont inexactes, incomplètes, équivoques, périmées ou dont la collecte ou l’utilisation, la communication ou la conservation sont interdites.
+            </p> 
+        <h2 class="display-5 fw-bold">6. Erreurs dans les publications</h2>
+            <p class="lead text-muted">
+                L’éditeur du site met tout en œuvre pour assurer l’exactitude et la mise à jour de l’ensemble des informations fournies sur son site.
+                Il ne peut cependant pas garantir que les informations contenues sur le site soient complètes, précises, exactes, exhaustives et dépourvues de toute erreur. En cas de signalement d’erreur, nous nous engageons à procéder à la correction de cette dernière dans les plus brefs délais.
+
+                Notre site décline toute responsabilité en cas de dysfonctionnement, erreur ou indisponibilité résultant de l’utilisation d’outils numériques ou de services tiers.
+            </p>
+        <h2 class="display-5 fw-bold">7. Modifications</h2>
+            <p class="lead text-muted">
+                En accédant et en naviguant sur ce site, l’utilisateur est informé de ses droits et obligations et accepte pleinement de se conformer aux présentes conditions d’utilisations du site. 
+                L’éditeur du site se réserve la possibilité de modifier ces conditions. 
+                Il appartient à l’utilisateur de vérifier périodiquement le contenu des documents concernés. 
+                L’éditeur se réserve la possibilité de supprimer ou de modifier RamèneTaFraise.
+            </p> 
+        <h2 class="display-5 fw-bold">8. Annexe</h2>
+            <p class="lead text-muted">
+                Pour toute demande ou interrogation, nous vous prierons de contacter un membre de la modération du site ou des divers groupes affiliés afin de traiter votre requête dans la plus stricte intimité et dans les délais les plus courts. 
+                Veuillez contacter un administrateur sur discord ou par le mail suivant : RameneTaFraise@gmail.com
+            </p> 
+        <p class="lead text-muted">
+            Dernière mise à jour de la page le 23/09/2025 à 22:55 (UTC+2)
+        </p>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-dark text-light py-5">
