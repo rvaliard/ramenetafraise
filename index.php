@@ -296,7 +296,7 @@ session_start();
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-light py-5">
+    <footer class="bg-light text-light py-5">
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-4">
