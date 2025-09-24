@@ -309,8 +309,7 @@ if ($search || $location_filter || $urgent_only) {
                     <ul class="list-unstyled">
                         <li><a href="#" class="text-muted text-decoration-none">Guide d'utilisation</a></li>
                         <li><a href="#" class="text-muted text-decoration-none">Sécurité</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Questions fréquentes</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Conditions d'utilisation</a></li>
+                        <li><a href="mentionslegales.php" class="text-muted text-decoration-none">Mentions légales</a></li>
                     </ul>
                 </div>
                 
