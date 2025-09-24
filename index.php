@@ -35,6 +35,9 @@ session_start();
                         <a class="nav-link" href="annonces.php">Voir les annonces</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="abonnements.php">Voir les abonnements</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="btn btn-success text-white px-4" href="publier.php">
                             <i class="fas fa-plus me-2"></i>Publier une annonce
                         </a>
@@ -296,7 +299,7 @@ session_start();
     </section>
 
     <!-- Footer -->
-    <footer class="bg-light text-light py-5">
+    <footer class="bg-dark text-light py-5">
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-4">
@@ -332,7 +335,7 @@ session_start();
                 <div class="col-lg-3">
                     <h6 class="text-warning">Contact</h6>
                     <ul class="list-unstyled text-muted">
-                        <li><i class="fas fa-envelope me-2"></i>contact@RameneTaFraise.fr</li>
+                        <li><i class="fas fa-envelope me-2"></i>contact@vergerpartage.fr</li>
                         <li><i class="fas fa-phone me-2"></i>09 xx xx xx xx</li>
                         <li><i class="fas fa-map-marker-alt me-2"></i>Pays de la Loire, France</li>
                     </ul>
@@ -342,7 +345,7 @@ session_start();
             <hr class="my-4">
             
             <div class="text-center text-muted">
-                <p>&copy; 2024 RameneTaFraise. Une initiative pour rapprocher les générations autour du jardinage.</p>
+                <p>&copy; 2024 VergerPartage. Une initiative pour rapprocher les générations autour du jardinage.</p>
             </div>
         </div>
     </footer>
