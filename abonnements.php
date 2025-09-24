@@ -57,7 +57,7 @@ session_start();
                 <div class="col-lg-8 mx-auto text-center">
                     <h1 class="display-5 fw-bold mb-3">Abonnements disponibles</h1>
                     <p class="lead text-muted">
-                        Découvrez les vergers près de chez vous qui ont besoin d'aide. Une belle façon de créer du lien et de manger sainement !
+                        Souscrivez à un abonnement afin de bénéficier de visites illimitées au jardin, ainsi que de vidéos de formations au jardinage.
                     </p>
                 </div>
             </div>
