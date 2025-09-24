@@ -1,3 +1,40 @@
+/* Font imports - Add @font-face declarations for custom fonts */
+@font-face {
+    font-family: 'Catchy Mager';
+    src: url('fonts/catchy-mager-regular.woff2') format('woff2'),
+         url('fonts/catchy-mager-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Catchy Mager';
+    src: url('fonts/catchy-mager-bold.woff2') format('woff2'),
+         url('fonts/catchy-mager-bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Glacial Indifference';
+    src: url('fonts/glacial-indifference-regular.woff2') format('woff2'),
+         url('fonts/glacial-indifference-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Glacial Indifference';
+    src: url('fonts/glacial-indifference-bold.woff2') format('woff2'),
+         url('fonts/glacial-indifference-bold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* RameneTaFraise - Custom styles following Share Fruits graphic charter */
 
 :root {
@@ -25,14 +62,14 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Catchy Mager', 'Segoe UI', Arial, sans-serif;
+    font-family: 'Catchy Mager', 'Impact', 'Arial Black', 'Helvetica', Arial, sans-serif;
     font-weight: 700;
     color: var(--dark-text);
 }
 
 /* Navigation */
 .navbar-brand {
-    font-family: 'Catchy Mager', 'Segoe UI', Arial, sans-serif;
+    font-family: 'Catchy Mager', 'Impact', 'Arial Black', 'Helvetica', Arial, sans-serif;
     font-size: 1.6rem;
     font-weight: 800;
     color: var(--secondary-orange) !important;
@@ -176,7 +213,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 12px 24px;
     border: none;
     transition: all 0.3s ease;
-    font-family: 'Glacial Indifference', sans-serif;
+    font-family: 'Glacial Indifference', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .btn-success {
@@ -237,7 +274,7 @@ h1, h2, h3, h4, h5, h6 {
     border: 2px solid rgba(132, 215, 119, 0.3);
     padding: 12px 16px;
     transition: all 0.3s ease;
-    font-family: 'Glacial Indifference', sans-serif;
+    font-family: 'Glacial Indifference', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .form-control:focus {
@@ -260,7 +297,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     color: var(--dark-text);
     margin-bottom: 8px;
-    font-family: 'Catchy Mager', sans-serif;
+    font-family: 'Catchy Mager', 'Impact', 'Arial Black', Arial, sans-serif;
 }
 
 .form-check-input:checked {
@@ -304,6 +341,19 @@ footer .h5 {
 }
 
 footer .text-warning {
+    color: var(--secondary-orange) !important;
+}
+
+/* Fix footer text visibility */
+footer .text-muted {
+    color: #d1d5db !important; /* Light gray instead of dark muted */
+}
+
+footer a.text-muted {
+    color: #9ca3af !important; /* Slightly darker gray for links */
+}
+
+footer a.text-muted:hover {
     color: var(--secondary-orange) !important;
 }
 
@@ -416,12 +466,12 @@ footer .text-warning {
 
 /* Typography scale adjustments */
 .display-4, .display-5 {
-    font-family: 'Catchy Mager', sans-serif;
+    font-family: 'Catchy Mager', 'Impact', 'Arial Black', Arial, sans-serif;
     font-weight: 800;
 }
 
 .lead {
-    font-family: 'Glacial Indifference', sans-serif;
+    font-family: 'Glacial Indifference', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
     font-weight: 400;
 }
 
