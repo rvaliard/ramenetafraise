@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Navigation */
 .navbar-brand {
-    font-family: 'Catchy Mager', 'Impact', 'Arial Black', 'Helvetica', Arial, sans-serif;
+    font-family: 'Catchy Mager', 'Arial Black', 'Helvetica', Arial, sans-serif;
     font-size: 1.6rem;
     font-weight: 800;
     color: var(--secondary-orange) !important;
@@ -297,7 +297,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     color: var(--dark-text);
     margin-bottom: 8px;
-    font-family: 'Catchy Mager', 'Impact', 'Arial Black', Arial, sans-serif;
+    font-family: 'Catchy Mager', 'Arial Black', Arial, sans-serif;
 }
 
 .form-check-input:checked {
@@ -466,7 +466,7 @@ footer a.text-muted:hover {
 
 /* Typography scale adjustments */
 .display-4, .display-5 {
-    font-family: 'Catchy Mager', 'Impact', 'Arial Black', Arial, sans-serif;
+    font-family: 'Catchy Mager', 'Arial Black', Arial, sans-serif;
     font-weight: 800;
 }
 
