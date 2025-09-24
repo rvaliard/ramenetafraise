@@ -141,7 +141,7 @@ $annonces = [
         'id' => 12,
         'titre' => 'Jardin-verger éducatif pour enfants',
         'lieu' => 'Tours, Indre-et-Loire',
-        'proprietaire' => 'Association Les Petites Mains',
+        'proprietaire' => 'Julie',
         'age' => 67, 
         'date' => '1 jour',
         'description' => 'Nous accueillons des enfants pour leur apprendre le jardinage et la cueillette. Venez encadrer les ateliers et participer aux récoltes !',
@@ -330,13 +330,13 @@ if ($search || $location_filter || $urgent_only) {
             </div>
             
             <!-- Load More Button (for future pagination) -->
-            <?php if (count($annonces) >= 6): ?>
+            <!-- <?php if (count($annonces) >= 6): ?>
                 <div class="text-center mt-5">
                     <button class="btn btn-outline-success btn-lg" onclick="loadMore()">
                         <i class="fas fa-plus me-2"></i>Charger plus d'annonces
                     </button>
                 </div>
-            <?php endif; ?>
+            <?php endif; ?> -->
         </div>
     </section>
 
@@ -418,18 +418,18 @@ if ($search || $location_filter || $urgent_only) {
         })
 
         // Load more functionality (demo)
-        function loadMore() {
-            const button = event.target;
-            button.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Chargement...';
-            button.disabled = true;
+        // function loadMore() {
+        //     const button = event.target;
+        //     button.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Chargement...';
+        //     button.disabled = true;
             
-            // Simulate loading
-            setTimeout(() => {
-                alert('Un instant...');
-                button.innerHTML = '<i class="fas fa-plus me-2"></i>Charger plus d\'annonces';
-                button.disabled = false;
-            }, 1000);
-        }
+        //     // Simulate loading
+        //     setTimeout(() => {
+        //         alert('Un instant...');
+        //         button.innerHTML = '<i class="fas fa-plus me-2"></i>Charger plus d\'annonces';
+        //         button.disabled = false;
+        //     }, 1000);
+        // }
 
         // Auto-submit form on urgent checkbox change
         document.getElementById('urgent').addEventListener('change', function() {
