@@ -305,24 +305,23 @@ session_start();
                     <ul class="list-unstyled">
                         <li><a href="index.php#comment-ca-marche" class="text-muted text-decoration-none">Comment ça marche</a></li>
                         <li><a href="annonces.php" class="text-muted text-decoration-none">Voir les annonces</a></li>
+                        <li><a href="abonnements.php" class="text-muted text-decoration-none">Abonnements</a></li>
                         <li><a href="publier.php" class="text-muted text-decoration-none">Publier une annonce</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Témoignages</a></li>
                     </ul>
                 </div>
                 
                 <div class="col-lg-3">
                     <h6 class="text-warning">Aide & Support</h6>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-muted text-decoration-none">Guide d'utilisation</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Sécurité</a></li>
-                        <li><a href="mentions-legales.php" class="text-muted text-decoration-none">Mentions légales</a></li>
+                        <li><a href="mentionslegales.php" class="text-muted text-decoration-none">Mentions légales</a></li>
                     </ul>
                 </div>
                 
                 <div class="col-lg-3">
                     <h6 class="text-warning">Contact</h6>
                     <ul class="list-unstyled text-muted">
-                        <li><i class="fas fa-envelope me-2"></i>RamèneTaFraise@gmail.com</li>
+                        <li><i class="fas fa-envelope me-2"></i>contact@RameneTaFraise.fr</li>
+                        <li><i class="fas fa-phone me-2"></i>09 55 78 90 34</li>
                         <li><i class="fas fa-map-marker-alt me-2"></i>Villeneuve-d'Ascq, France</li>
                     </ul>
                 </div>
@@ -331,7 +330,7 @@ session_start();
             <hr class="my-4">
             
             <div class="text-center text-muted">
-                <p>&copy; 2024 RamèneTaFraise. Une initiative pour rapprocher les générations autour du jardinage.</p>
+                <p>&copy; 2025 RameneTaFraise. Une initiative pour rapprocher les générations autour du jardinage.</p>
             </div>
         </div>
     </footer>
