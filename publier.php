@@ -34,7 +34,7 @@ if ($_POST) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publier une annonce - VergerPartage</title>
+    <title>Publier une annonce - RameneTaFraise</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
@@ -411,7 +411,7 @@ if ($_POST) {
                                     <div class="form-check mt-2">
                                         <input class="form-check-input" type="checkbox" id="newsletter" name="newsletter">
                                         <label class="form-check-label" for="newsletter">
-                                            Je souhaite recevoir des conseils jardinage et les actualités de VergerPartage
+                                            Je souhaite recevoir des conseils jardinage et les actualités de RameneTaFraise
                                         </label>
                                     </div>
                                 </div>
@@ -469,7 +469,7 @@ if ($_POST) {
                 <div class="col-lg-4">
                     <div class="d-flex align-items-center mb-3">
                         <i class="fas fa-leaf text-success me-2"></i>
-                        <strong class="h5">VergerPartage</strong>
+                        <strong class="h5">RameneTaFraise</strong>
                     </div>
                     <p class="text-muted">
                         Créons des liens intergénérationnels autour du partage et de la nature.
@@ -499,7 +499,7 @@ if ($_POST) {
                 <div class="col-lg-3">
                     <h6 class="text-warning">Contact</h6>
                     <ul class="list-unstyled text-muted">
-                        <li><i class="fas fa-envelope me-2"></i>contact@vergerpartage.fr</li>
+                        <li><i class="fas fa-envelope me-2"></i>contact@RameneTaFraise.fr</li>
                         <li><i class="fas fa-phone me-2"></i>09 xx xx xx xx</li>
                         <li><i class="fas fa-map-marker-alt me-2"></i>Pays de la Loire, France</li>
                     </ul>
@@ -509,7 +509,7 @@ if ($_POST) {
             <hr class="my-4">
             
             <div class="text-center text-muted">
-                <p>&copy; 2024 VergerPartage. Une initiative pour rapprocher les générations autour du jardinage.</p>
+                <p>&copy; 2024 RameneTaFraise. Une initiative pour rapprocher les générations autour du jardinage.</p>
             </div>
         </div>
     </footer>
