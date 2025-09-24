@@ -55,14 +55,14 @@
 
 /* Typography following graphic charter */
 body {
-    font-family: 'Glacial Indifference', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Glacial Indifference', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
     color: var(--dark-text);
     background-color: var(--white);
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Catchy Mager', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Catchy Mager', 'Impact', 'Arial Black', 'Helvetica', Arial, sans-serif;
     font-weight: 700;
     color: var(--dark-text);
 }
