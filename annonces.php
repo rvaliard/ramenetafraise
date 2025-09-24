@@ -125,10 +125,13 @@ if ($search || $location_filter || $urgent_only) {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php#comment-ca-marche">Comment ça marche</a>
+                        <a class="nav-link" href="#comment-ca-marche">Comment ça marche</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active fw-bold" href="annonces.php">Voir les annonces</a>
+                        <a class="nav-link" href="annonces.php">Voir les annonces</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="abonnements.php">Abonnements</a>
                     </li>
                     <li class="nav-item">
                         <a class="btn btn-success text-white px-4" href="publier.php">

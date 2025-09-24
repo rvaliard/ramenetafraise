@@ -35,7 +35,7 @@ session_start();
                         <a class="nav-link" href="annonces.php">Voir les annonces</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="abonnements.php">Voir les abonnements</a>
+                        <a class="nav-link" href="abonnements.php">Abonnements</a>
                     </li>
                     <li class="nav-item">
                         <a class="btn btn-success text-white px-4" href="publier.php">
