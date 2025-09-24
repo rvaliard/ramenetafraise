@@ -17,7 +17,7 @@ session_start();
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="index.php">
-                <i class="fas fa-strawberry-fields text-success me-2"></i>
+                <i class="fas fa-leaf text-success me-2"></i>
                 <strong>RameneTaFraise</strong>
             </a>
             
@@ -28,10 +28,13 @@ session_start();
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php#comment-ca-marche">Comment ça marche</a>
+                        <a class="nav-link" href="#comment-ca-marche">Comment ça marche</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="annonces.php">Voir les annonces</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="abonnements.php">Abonnements</a>
                     </li>
                     <li class="nav-item">
                         <a class="btn btn-success text-white px-4" href="publier.php">
