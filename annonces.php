@@ -76,7 +76,80 @@ $annonces = [
         'fruits' => ['Pommes', 'Poires', 'Prunes', 'Œufs frais'],
         'taches' => ['Récolte', 'Soins aux animaux', 'Ramassage'],
         'urgent' => false
+    ],
+    [
+        'id' => 7,
+        'titre' => 'Verger familial de pommiers bio',
+        'lieu' => 'Angers, Maine-et-Loire',
+        'proprietaire' => 'Marie et Luc',
+        'age' => 62,
+        'date' => '3 jours',
+        'description' => 'Notre petit verger bio a besoin d’aide pour la cueillette des pommes et l’entretien des arbres. Ambiance conviviale garantie !',
+        'fruits' => ['Pommes', 'Coings'],
+        'taches' => ['Récolte', 'Taille des arbres', 'Compostage'],
+        'urgent' => true
+    ],
+    [
+        'id' => 8,
+        'titre' => 'Cueillettes de cerises en bord de Loire',
+        'lieu' => 'Saumur, Maine-et-Loire',
+        'proprietaire' => 'Jean-Paul',
+        'age' => 68,
+        'date' => '5 jours',
+        'description' => 'Verger situé près de la Loire, parfait pour un week-end de cueillette et de balade. Participation à la transformation en confitures bienvenue !',
+        'fruits' => ['Cerises', 'Groseilles'],
+        'taches' => ['Récolte', 'Nettoyage', 'Préparation confitures'],
+        'urgent' => false
+    ],
+    [
+        'id' => 9,
+        'titre' => 'Verger participatif en permaculture',
+        'lieu' => 'Nantes, Loire-Atlantique',
+        'proprietaire' => 'Camille',
+        'age' => 45,
+        'date' => '2 semaines',
+        'description' => 'Un projet collectif ouvert à tous : venez apprendre et participer à la culture d’un verger en permaculture.',
+        'fruits' => ['Pommes', 'Poires', 'Framboises'],
+        'taches' => ['Paillage', 'Plantation', 'Récolte'],
+        'urgent' => false
+    ],
+    [
+        'id' => 10,
+        'titre' => 'Petite exploitation de pruniers en montagne',
+        'lieu' => 'Clisson, Loire-Atlantique',
+        'proprietaire' => 'Bernadette',
+        'age' => 70,
+        'date' => '4 jours',
+        'description' => 'Nous recherchons des volontaires pour nous aider à récolter les prunes et entretenir les sentiers entre les arbres.',
+        'fruits' => ['Prunes', 'Mirabelles'],
+        'taches' => ['Récolte', 'Entretien des allées', 'Taille'],
+        'urgent' => true
+    ],
+    [
+        'id' => 11,
+        'titre' => 'Vergers anciens à redynamiser',
+        'lieu' => 'La Flèche, Sarthe',
+        'proprietaire' => 'René',
+        'age' => 80,
+        'date' => '3 semaines',
+        'description' => 'Ancien verger familial avec de nombreuses variétés anciennes. Nous avons besoin d’un coup de main pour redonner vie aux arbres.',
+        'fruits' => ['Pommes anciennes', 'Poires', 'Nèfles'],
+        'taches' => ['Taille', 'Compostage', 'Récolte'],
+        'urgent' => false
+    ],
+    [
+        'id' => 12,
+        'titre' => 'Jardin-verger éducatif pour enfants',
+        'lieu' => 'Tours, Indre-et-Loire',
+        'proprietaire' => 'Association Les Petites Mains',
+        'age' => 67, 
+        'date' => '1 jour',
+        'description' => 'Nous accueillons des enfants pour leur apprendre le jardinage et la cueillette. Venez encadrer les ateliers et participer aux récoltes !',
+        'fruits' => ['Fraises', 'Framboises', 'Pommes'],
+        'taches' => ['Ateliers pédagogiques', 'Récolte', 'Plantation'],
+        'urgent' => false
     ]
+
 ];
 
 // Filter functionality
@@ -352,7 +425,7 @@ if ($search || $location_filter || $urgent_only) {
             
             // Simulate loading
             setTimeout(() => {
-                alert('Fonctionnalité de pagination à implémenter selon vos besoins !');
+                alert('Un instant...');
                 button.innerHTML = '<i class="fas fa-plus me-2"></i>Charger plus d\'annonces';
                 button.disabled = false;
             }, 1000);
